@@ -23,7 +23,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - `MySQL`
 
 ## ✨ Projeto
-Projeto desenvolvido junto com o instrutor para o Bootcamp Santander Back End 2023. Java RESTful API.
+Projeto desenvolvido junto com o instrutor durante o curso para o Bootcamp Santander Back End 2023. Java API RESTful.
 
 
 ## 🎯 FIGMA
