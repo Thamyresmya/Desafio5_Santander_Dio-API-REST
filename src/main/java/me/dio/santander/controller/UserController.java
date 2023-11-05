@@ -1,0 +1,54 @@
+package me.dio.santander.controller;
+
+import me.dio.santander.domain.model.User;
+import me.dio.santander.service.UserService;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
+
+import java.net.URI;
+
+@RestController
+@RequestMapping("/users")
+public class UserController {
+
+    //injeção do User Service
+    private final UserService userService;
+
+    //Contrutor
+    public UserController(UserService userService) {
+        this.userService = userService;
+    }
+
+    //EndPoint
+    @GetMapping("/{id}")
+    public ResponseEntity<User> findById(@PathVariable Long id) {
+        var user = userService.findById(id);
+        return ResponseEntity.ok(user);
+    }
+
+    @PostMapping
+    public ResponseEntity<User> create(@RequestBody User userToCreate) {
+        var userCreated = userService.create(userToCreate);
+        URI location = ServletUriComponentsBuilder.fromCurrentRequest()
+                .path("/{id}")
+                .buildAndExpand(userCreated.getId())
+                .toUri();
+        return ResponseEntity.created(location).body(userCreated);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
