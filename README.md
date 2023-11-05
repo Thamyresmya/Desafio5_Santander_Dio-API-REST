@@ -72,8 +72,28 @@ classDiagram
 
 ## Documentação da API (Swagger)
 
-[Swagger](http://localhost:8080/swagger-ui/index.html) 
+[API Swagger](http://localhost:8080/swagger-ui/index.html) 
 
+## 📁 Acesso ao projeto
+
+É possível acessar o código através do [Link](https://github.com/Thamyresmya/Desafio5_Santander_Dio-API-REST). Neste repositório você tem acesso a todo o material desenvolvido durante o curso.
+
+## 📸 Apresentação
+
+Teste POST<br>
+<img width="100%" height="450" src="./geral/Captura%20de%20tela%202023-11-04%20130953.png"></img>
+
+Resultado code 201 <br>
+<img width="100%" height="390" src="./geral/Captura%20de%20tela%202023-11-04%20131006.png"></img>
+
+Resultado Json<br>
+<img width="100%" height="450" src="./geral/Captura%20de%20tela%202023-11-04%20131043.png"></img>
+
+Teste GET <br>
+<img width="100%" height="390" src="./geral/Captura%20de%20tela%202023-11-04%20131110.png"></img>
+
+Tabelas criadas no MySQL <br>
+<img width="100%" height="390" src="./geral/Captura%20de%20tela%202023-11-04%20131223.png"></img>
 
 
 
